@@ -61,5 +61,5 @@
 [init]
   defaultBranch = master
 [user]
-	email = gh api user/emails | jq -r '.[].email'
-	name = ...@users.noreply.github.com
+	email = export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+	name = 341379094+ciratme@users.noreply.github.com
